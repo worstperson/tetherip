@@ -54,7 +54,6 @@ public class patch implements IXposedHookLoadPackage {
                     if (overrideAddress != null) {
                         param.setResult(XposedHelpers.newInstance(LinkAddress, overrideAddress));
                     }
-
                 }
             });
         } else {
@@ -67,7 +66,6 @@ public class patch implements IXposedHookLoadPackage {
                     if (overrideAddress != null) {
                         param.setResult(XposedHelpers.newInstance(LinkAddress, overrideAddress));
                     }
-
                 }
             });
         }

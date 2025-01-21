@@ -17,7 +17,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,10 +25,13 @@
             android:value="true" />
         <meta-data
             android:name="xposeddescription"
-            android:value="Easy example which makes the status bar clock red and adds a smiley" />
+            android:value="Override IP range used when tethering" />
         <meta-data
             android:name="xposedminversion"
             android:value="82" />
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/module_scope" />
     </application>
 
 </manifest>
